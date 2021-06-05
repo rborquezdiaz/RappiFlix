@@ -1,5 +1,5 @@
 # RappiFlix
-A quick glimpse of the next great streaming service! (A small essay on the VIPER architecture).
+A quick glimpse of the next great streaming service! (A small essay on the VIPER architecture). PS. I added a small easter egg somewhere in the app, see if you can find it haha.
 
 ## Architecture (VIPER & Application Layers)
 
@@ -47,3 +47,4 @@ As I mentioned before, the single responsability principle should be a developer
 The first one being DRY, don't repeat yourself. This means, that if you ever need to use code you've already written, make sure you externalize and generalize it so that other classes can make use of it. Another important one is leaving comments whenever you can. You don't always have the opportunity to do so, but it's polite to do so when you know a particular functionality is complicated and you are not working alone on the project.
 
 And then, there's my golden rule: KEEP IT SIMPLE. I personally feel that a lot of developers like to show off by overengineering solutions to a problem. Keeping things simple is a talent and something that should always be strived for. If your fellow developers can read your code, understand it and then add something extra to it, you've done your job right.
+
