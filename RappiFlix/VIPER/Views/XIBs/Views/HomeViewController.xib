@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="RappiFlix" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="LgU-kB-XBg" id="jT6-Ce-q5l"/>
+                <outlet property="homeTableView" destination="8Kr-tg-3Xl" id="UgQ-Da-QQF"/>
+                <outlet property="popcornImageView" destination="iJg-0y-sgm" id="lwi-qY-cgG"/>
+                <outlet property="rappiLogoImageView" destination="d3s-5Z-IBf" id="n67-0e-PTd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgU-kB-XBg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="55"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rappi-logo-small-white" translatesAutoresizingMaskIntoConstraints="NO" id="d3s-5Z-IBf">
+                            <rect key="frame" x="20" y="5" width="73" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="d3s-5Z-IBf" secondAttribute="height" multiplier="137:75" id="cAh-ns-UDw"/>
+                                <constraint firstAttribute="height" constant="40" id="jme-Fj-sN5"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popcorn-1" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-0y-sgm">
+                            <rect key="frame" x="359" y="5" width="35" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="TaQ-sF-Rpo"/>
+                                <constraint firstAttribute="width" secondItem="iJg-0y-sgm" secondAttribute="height" multiplier="1:1" id="ogL-40-jM2"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" name="RappiOrange"/>
+                    <constraints>
+                        <constraint firstItem="d3s-5Z-IBf" firstAttribute="leading" secondItem="LgU-kB-XBg" secondAttribute="leading" constant="20" id="PRy-Hq-PRW"/>
+                        <constraint firstAttribute="height" constant="55" id="TqQ-Av-YHJ"/>
+                        <constraint firstAttribute="trailing" secondItem="iJg-0y-sgm" secondAttribute="trailing" constant="20" id="WoL-Ta-QYz"/>
+                        <constraint firstItem="iJg-0y-sgm" firstAttribute="top" secondItem="d3s-5Z-IBf" secondAttribute="top" id="rvp-VT-QvP"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Kr-tg-3Xl">
+                    <rect key="frame" x="0.0" y="99" width="414" height="797"/>
+                    <color key="backgroundColor" name="RappiBase"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IS5-jE-BJv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <color key="backgroundColor" name="RappiOrange"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="RappiBase"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="d3s-5Z-IBf" secondAttribute="top" constant="-5" id="51e-NY-fmy"/>
+                <constraint firstAttribute="bottom" secondItem="8Kr-tg-3Xl" secondAttribute="bottom" id="8E5-HR-xUt"/>
+                <constraint firstItem="8Kr-tg-3Xl" firstAttribute="top" secondItem="LgU-kB-XBg" secondAttribute="bottom" id="Gfu-Aa-hol"/>
+                <constraint firstItem="8Kr-tg-3Xl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PlP-GK-glG"/>
+                <constraint firstItem="LgU-kB-XBg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WOY-Pt-Kfu"/>
+                <constraint firstItem="IS5-jE-BJv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cVe-Fq-Bbo"/>
+                <constraint firstItem="IS5-jE-BJv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gNr-Bc-u5d"/>
+                <constraint firstItem="LgU-kB-XBg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="gOk-0w-mnU"/>
+                <constraint firstAttribute="trailing" secondItem="IS5-jE-BJv" secondAttribute="trailing" id="hee-Zz-MYv"/>
+                <constraint firstItem="LgU-kB-XBg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="phG-Up-luX"/>
+                <constraint firstItem="LgU-kB-XBg" firstAttribute="top" secondItem="IS5-jE-BJv" secondAttribute="bottom" id="sHL-VV-GDd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Kr-tg-3Xl" secondAttribute="trailing" id="xYs-kV-lrY"/>
+            </constraints>
+            <point key="canvasLocation" x="89.855072463768124" y="80.357142857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popcorn-1" width="128" height="128"/>
+        <image name="rappi-logo-small-white" width="274" height="150"/>
+        <namedColor name="RappiBase">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RappiOrange">
+            <color red="0.96470588235294119" green="0.36862745098039218" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieListViewController" customModule="RappiFlix" customModuleProvider="target">
+            <connections>
+                <outlet property="loader" destination="oIi-It-QRB" id="bYX-Ug-wXH"/>
+                <outlet property="movieListCollectionView" destination="DPp-tq-w7o" id="p7j-6Q-Qh5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="MovieListViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DPp-tq-w7o">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <color key="backgroundColor" name="RappiBase"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j8O-If-bWG">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="oIi-It-QRB">
+                    <rect key="frame" x="188.5" y="820" width="37" height="37"/>
+                    <color key="color" name="RappiOrange"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="RappiOrange"/>
+            <constraints>
+                <constraint firstItem="DPp-tq-w7o" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1gG-Ms-1rL"/>
+                <constraint firstItem="DPp-tq-w7o" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="FgG-xG-4cg"/>
+                <constraint firstItem="oIi-It-QRB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kw7-UC-4QJ"/>
+                <constraint firstAttribute="bottom" secondItem="DPp-tq-w7o" secondAttribute="bottom" id="LAA-k5-P3b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oIi-It-QRB" secondAttribute="bottom" constant="5" id="a18-mU-iBP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DPp-tq-w7o" secondAttribute="trailing" id="lnP-yW-V5W"/>
+            </constraints>
+            <point key="canvasLocation" x="108.69565217391305" y="51.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="RappiBase">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RappiOrange">
+            <color red="0.96470588235294119" green="0.36862745098039218" blue="0.019607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
